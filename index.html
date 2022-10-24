@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Ecommerce</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="h-header">
+        <nav class="nav bd-grid">
             <div>
-                <a href=""></a>
+                <a href="#" class="logo">Summer</a>
             </div>
-            <div>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+            <div class="menu" id="id-menu">
+                <ul class="u-list">
+                    <li class="l-item"><a href="#inicio" class="l-link">Inicio</a></li>
+                    <li class="l-item"><a href="#produtos" class="l-link">Produtos</a></li>
+                    <li class="l-item"><a href="#novidades" class="l-link"></a>Novidades</li>                   
                 </ul>
             </div>
             <div>
-                <i></i>
-                <i></i>
+                <i class='bx bxs-cart _cart'></i>
+                <i class='bx bx-menu _toggle' id="i-toggle"></i>
             </div>
         </nav>
     </header>
@@ -38,6 +38,6 @@
             </div>
         </section>
     </main>
-    
+    <script src="/app.js"></script>
 </body>
 </html>
