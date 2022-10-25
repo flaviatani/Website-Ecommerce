@@ -22,7 +22,7 @@
     --corwhite: #fafaff;
     --corblack: #101010;
     --corgray: #606060;
-    --corlight: #f3eb97;   
+    --corlight: #f7f2b9;   
 }
 
 @media screen and (min-width: 768px){
@@ -109,4 +109,60 @@ img{
     width: calc(100% - 3rem);
     margin-left: var(--marg3);
     margin-right: var(--marg3);
+}
+
+.h-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--ifixed);
+    background-color: var(--corlight);
+}
+
+.nav{
+    height: var(--headeralt);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        position: fixed;
+        top: var(--headeralt);
+        right: 0;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--corwhite);
+        transition: .5;
+    }
+}
+
+.l-item{
+    margin-bottom: var(--marg4);
+}
+
+.l-link{
+    color: var(--corblack);
+    font-weight: var(--font1);
+}
+
+.l-link:hover{
+    color: var(--cor1);    
+}
+
+.logo{
+    font-weight: bold;
+}
+
+._cart{
+    font-size: 1.5rem;
+    margin-right: var(--marg2);
+}
+
+._toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
 }
