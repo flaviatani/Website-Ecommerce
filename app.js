@@ -1,10 +1,10 @@
-const showMenu = (_toggle, navId) =>{
-    const _toggle = document.getElementById(_toggle),
+const showMenu = (toggle, navId) =>{
+    const toggle = document.getElementById(toggle),
     nav = document.getElementById(navId)
 
-    if(_toggle && nav){
-        _toggle.addEventListner('click', ()=>{
-            nav.classList._toggle('show')
+    if(toggle && nav){
+        toggle.addEventListner('click', ()=>{
+            nav.classList.toggle('show')
         })
     }
 }
