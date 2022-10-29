@@ -1,10 +1,13 @@
-const showMenu = (toggle, navId) =>{
-    const toggle = document.getElementById(toggle),
-    nav = document.getElementById(navId)
+
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
 
     if(toggle && nav){
-        toggle.addEventListner('click', ()=>{
+        toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show')
         })
     }
 }
+
+showMenu('i-toggle','bar-menu')

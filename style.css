@@ -128,15 +128,15 @@ img{
 }
 
 @media screen and (max-width: 768px){
-    .menu{
+    .l-menu{
         position: fixed;
         top: var(--headeralt);
-        right: 0;
+        right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--corwhite);
-        transition: .5;
+        transition: .5s;
     }
 }
 
@@ -165,4 +165,12 @@ img{
 ._toggle{
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.show{
+    right: 0;
+}
+
+.active{
+    color: var(--cor1);
 }
