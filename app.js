@@ -11,3 +11,19 @@ const showMenu = (toggleId, navId) => {
 }
 
 showMenu('i-toggle','bar-menu')
+
+//Remover o menu mobile
+
+const navLink = document.querySelectorAll('.l-link')
+
+function linkAction(){
+    // Link ativo
+    navLink.forEach(n => n.classList.remove('active'))
+    this.classList.add('active')
+
+    // Remove menu
+    const navMenu = document.getElementById('bar-menu')
+    navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))

@@ -18,7 +18,7 @@
 
 :root{
     --cor1: #8822aa;
-    --cor1-2: #9857ae;
+    --cor1-2: #c79fd4;
     --corwhite: #fafaff;
     --corblack: #101010;
     --corgray: #606060;
@@ -173,4 +173,49 @@ img{
 
 .active{
     color: var(--cor1);
+}
+
+.home{
+    background-color:#fafaff
+}
+
+.home-container{
+    height: calc(100vh - var(--headeralt));
+}
+
+.home-data{
+    padding-top: 6rem;
+}
+
+.home-title{
+    align-self: center;
+    font-size: var(--bigfont);
+    line-height: 1;
+    letter-spacing: .5rem;
+    margin-bottom: 4rem;
+}
+
+.home-title span{
+    font-size: var(--h1font);
+}
+
+.home-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--cor1);
+    color: var(--corwhite);
+    padding: 1rem;
+    font-size: var(--smallfont);
+    font-weight: var(--font1);
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--cor1-2);
 }
