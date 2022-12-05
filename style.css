@@ -219,3 +219,42 @@ img{
 .button:hover{
     background-color: var(--cor1-2);
 }
+
+.collection-container{
+    row-gap: 2rem;
+}
+
+.collection-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    background-color: var(--corwhite);
+    transition: .3s;
+}
+
+.collection-box:hover{
+    transform: translateY(-.5rem);
+}
+
+.collection-img{
+    width: 100px;
+}
+
+.collection-title{
+    font-size: var(--h1font);
+    line-height: 1.2;
+    margin-bottom: var(--marg2);
+    text-transform: uppercase;
+    font-weight: var(--font1);
+}
+
+.collection-subtitle{
+    font-size: var(--h2font);
+    color: var(--corblack);
+}
+
+.collection-view{
+    font-size: var(--smallfont);
+    color: var(--corgray);
+}
