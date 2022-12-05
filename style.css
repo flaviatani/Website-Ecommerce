@@ -96,7 +96,7 @@ img{
     display: block;
     font-size: var(--smallfont);
     font-weight: var(--font1);
-    color: var(--corlight);
+    color: var(--cor1);
     text-align: center;
     margin-bottom: var(--marg2);
 }
@@ -257,4 +257,48 @@ img{
 .collection-view{
     font-size: var(--smallfont);
     color: var(--corgray);
+}
+
+.featured-container{
+    row-gap: 2rem;
+}
+
+.featured-product{
+    transition: .3s;
+}
+
+.featured-product:hover{
+    transform: translateY(-.5rem);
+}
+
+.featured-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor1-2);
+}
+
+.featured-new{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--corgray);
+    color: var(--cor1);
+    padding: .3rem .75rem;
+    font-size: var(--smallfont);
+}
+
+.featured-data{
+    text-align: center;
+}
+
+.featured-name{
+    margin-bottom: var(--marg1);
+    text-transform: uppercase;
+    font-size: var(--normalfont);
+}
+
+.featured-price{
+    color: var(--corblack);
+    font-weight: var(--font1);
 }
